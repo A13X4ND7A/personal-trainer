@@ -1,10 +1,47 @@
-/* purgecss start ignore */
+@import url('https://use.typekit.net/isw2cxa.css');
+
 @tailwind base;
 @tailwind components;
-article a {
-    color: rgb(49, 49, 182);
-    text-decoration: underline;
-}
-/* purgecss end ignore */
 @tailwind utilities;
 
+@layer base {
+}
+
+@layer components {
+	h1 {
+		@apply text-2xl;
+	}
+	h2 {
+		@apply text-xl;
+	}
+
+	.navText {
+		@apply flex justify-start items-center w-full h-14 pt-2 pb-2 pr-4 text-primary-default uppercase hover:text-primary-lightest lg:inline-flex lg:w-auto lg:bg-transparent lg:mb-12;
+	}
+
+	.nav-menu {
+		@apply fixed min-h-screen bg-darkCol-default w-28 flex justify-center top-0 -left-full;
+	}
+	.active {
+		@apply z-10 left-0 w-screen;
+	}
+}
+
+@layer utilities {
+	.max-w-156 {
+		max-width: 156px;
+	}
+	.min-w-156 {
+		min-width: 156px;
+	}
+	.max-w-100 {
+		max-width: 100%;
+	}
+	.-z-1 {
+		z-index: -1;
+	}
+
+	.origin-0 {
+		transform-origin: 0%;
+	}
+}

@@ -1,10 +1,10 @@
 {
-	"name": "mysanityproject",
+	"name": "ptrainer",
 	"private": true,
 	"version": "1.0.0",
 	"description": "",
 	"main": "package.json",
-	"author": "Knut Melvær <knut@sanity.io>",
+	"author": "Alexandra Faller",
 	"license": "UNLICENSED",
 	"keywords": [
 		"sanity"
