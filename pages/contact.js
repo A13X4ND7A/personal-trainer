@@ -46,7 +46,7 @@ const contact = () => {
 						initial='initial'
 						animate='animate'
 						className='uppercase text-primary-default leading-5 md:text-4xl lg:text-6xl md:tracking-widest font-thin pt-8 md:ml-14 lg:ml-32 font-trade'>
-						Get in touch!
+						Get in touch
 					</motion.h1>
 				</div>
 			</section>
