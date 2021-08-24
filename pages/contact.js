@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import Maps from '../components/maps/maps';
+import Maps from '../components/Maps/Maps';
 import SocialMedia from '../components/footer/socialmedia';
 
 const buttonVariants = {

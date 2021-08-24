@@ -37,7 +37,7 @@ export default function Index({allPosts, testimonialPosts}) {
 				</section>
 
 				{/*--section for the Maps--*/}
-		<Maps />
+				<Maps />
 		
 		</>
 	);
