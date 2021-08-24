@@ -1,4 +1,4 @@
-import Maps from '../components/Maps/Maps';
+import Maps from '../components/Maps/Maps'
 import Testimonial from '../components/Testimonials/Testimonial'
 import Head from 'next/head';
 import {getAllPostsForHome, getTestimonials} from '../lib/api';
@@ -20,25 +20,24 @@ export default function Index({allPosts, testimonialPosts}) {
 
 
 				{/*--Testimonial section--*/}
-				 <Testimonial testimonials={testimonialPosts}/> 
+				<Testimonial testimonials={testimonialPosts}/> 
 	
 				{/*--programs section--*/}
 				<Programs />
 
 				{/*--section for the blog--*/}
 				<section>
-			<h4 className='flex justify-center text-primary-dark md:text-lg lg:text-2xl font-tradeCondensed tracking-widest'>
-				From My Blog
-			</h4>
-			<h2 className='text-darkCol uppercase text-2xl flex justify-center md:text-4xl lg:text-6xl font-thin'>
-				Latest Articles
-			</h2>
-				{morePosts.length > 0 && <MoreStories posts={morePosts} />}
-
-			</section>
+					<h4 className='flex justify-center text-primary-dark md:text-lg lg:text-2xl font-tradeCondensed tracking-widest'>
+						From My Blog
+					</h4>
+					<h2 className='text-darkCol uppercase text-2xl flex justify-center md:text-4xl lg:text-6xl font-thin'>
+						Latest Articles
+					</h2>
+						{morePosts.length > 0 && <MoreStories posts={morePosts} />}
+				</section>
 
 				{/*--section for the Maps--*/}
-				<Maps />
+		<Maps />
 		
 		</>
 	);
