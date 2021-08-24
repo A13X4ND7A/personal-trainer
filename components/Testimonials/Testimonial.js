@@ -27,8 +27,8 @@ export default function Testimonial({testimonials}) {
 						interval={7000}>
 						{testimonials.map((testimonial) => (
 						
-							<li key={testimonial._id}>
-								<div className='flex flex-row p-12 text-gray-200 lg:max-w-2xl items-center mx-auto font-trade'>
+							
+								<div className='flex flex-row p-12 text-gray-200 lg:max-w-2xl items-center mx-auto font-trade' key={testimonial._id}>
 									<span className='text-2xl block pr-4 text-gray-200'>
 										<FaIcons.FaQuoteLeft />
 									</span>
@@ -37,7 +37,7 @@ export default function Testimonial({testimonials}) {
 										
 										<p className='text-gray-200'> {testimonial.testimonialExcerpt}</p>
 										
-										<span className='flex font-xs font-bold text-gray-200 justify-end font-tradeCondensed tracking-wide'>
+										<span  className='flex font-xs font-bold text-gray-200 justify-end font-tradeCondensed tracking-wide'>
 											{testimonial.clientName}
 										</span>
 									</div>
@@ -45,7 +45,7 @@ export default function Testimonial({testimonials}) {
 										<FaIcons.FaQuoteRight />
 									</span>
 								</div>
-							</li> 
+				
 					
 				))}
 		
