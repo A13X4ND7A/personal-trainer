@@ -1,4 +1,4 @@
-import Logo from '../navbar/Logo';
+import Logo from '../Navbar/Logo';
 
 const Copyright = () => {
 	const getFullYear = new Date().getFullYear();

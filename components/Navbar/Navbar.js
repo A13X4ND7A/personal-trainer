@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import NavbarLinks from './navbarlinks';
+import NavbarLinks from './NavbarLinks';
 import {IconContext} from 'react-icons';
 import * as AiIcons from 'react-icons/ai';
 import Logo from './Logo';
