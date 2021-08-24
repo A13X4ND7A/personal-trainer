@@ -1,5 +1,5 @@
-import SocialMedia from './SocialMedia';
-import Copyright from './Copyright';
+import SocialMedia from './socialmedia';
+import Copyright from './copyright';
 
 const Footer = () => {
 	return (
