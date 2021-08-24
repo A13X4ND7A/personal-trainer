@@ -76,7 +76,7 @@ export default function Services({services}) {
 						variants={headerVariants}
 						initial='initial'
 						animate='animate'
-						className='uppercase text-primary-default leading-5 md:text-4xl lg:text-6xl md:tracking-widest font-thin pt-8'>
+						className='uppercase text-primary-default leading-5 md:text-4xl lg:text-6xl md:tracking-widest font-thin pt-8 font-trade'>
 						Services
 					</motion.h1>
 				</div>
@@ -100,7 +100,7 @@ export default function Services({services}) {
 													variants={headerVariants}
 													initial='initial'
 													animate='animate'
-													className='text-2xl lg:text-6xl mb-4 font-thin uppercase bg-white bg-opacity-75 px-1 py-1 rounded'>
+													className='text-2xl lg:text-6xl mb-4 font-thin uppercase bg-white bg-opacity-75 px-1 py-1 rounded font-tradeCondensed'>
 													{service.title}
 												</motion.h2>
 											</div>
@@ -134,7 +134,7 @@ export async function getStaticProps() {
 		props: {services},
 		revalidate: 1,
 	};
-	console.log(services)
+
 	
 	
 }

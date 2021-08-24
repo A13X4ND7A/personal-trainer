@@ -8,6 +8,9 @@
 }
 
 @layer components {
+	body {
+		@apply font-trade
+	}
 	h1 {
 		@apply text-2xl;
 	}

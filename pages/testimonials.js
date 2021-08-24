@@ -73,7 +73,7 @@ return (
 						variants={headerVariants}
 						initial='initial'
 						animate='animate'
-						className='uppercase text-primary-default leading-5 md:text-4xl lg:text-6xl md:tracking-widest font-thin pt-8'>
+						className='uppercase text-primary-default leading-5 md:text-4xl lg:text-6xl md:tracking-widest font-thin pt-8 font-trade'>
 						Testimonials
 					</motion.h1>
 				</div>

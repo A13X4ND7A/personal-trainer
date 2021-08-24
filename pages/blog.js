@@ -41,7 +41,7 @@ export default function Blog({allPosts}) {
 	return (
 		<>
 			<section className='bg-about-bg bg-cover bg-center md:mb-8'>
-				<div className='max-w-6xl flex content-center pt-20 pb-14 md:pt-36 md:pb-32 px-20 md:px-28 lg:px-36'>
+				<div className='max-w-6xl flex content-center pt-20 pb-14 md:pt-36 md:pb-32 px-20 md:px-28 lg:px-36 font-trade'>
 					<motion.h1
 						variants={headerVariants}
 						initial='initial'
