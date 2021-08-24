@@ -1,6 +1,6 @@
-import Hero from '../components/hero';
-import Programs from '../components/programs';
 
+import Programs from '../components/programs';
+import Hero from '../components/hero'
 import Maps from '../components/maps/maps';
 import Head from 'next/head';
 import {getAllPostsForHome} from '../lib/api';
@@ -16,7 +16,10 @@ export default function Index({allPosts}) {
 					<title>Personal Trainer Blog Example</title>
 				</Head>
 				{/*--Hero section--*/}
+				
 				<Hero />
+
+
 				{/*--Testimonial section--*/}
 				{/* <Testimonial /> */}
 
