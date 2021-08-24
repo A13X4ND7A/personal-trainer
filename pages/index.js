@@ -1,5 +1,5 @@
-import Maps from '../components/maps/maps';
-import Testimonial from '../components/testimonials/testimonial'
+import Maps from '../components/Maps/Maps';
+import Testimonial from '../components/Testimonials/Testimonial'
 import Head from 'next/head';
 import {getAllPostsForHome, getTestimonials} from '../lib/api';
 import MoreStories from '../components/more-stories';
