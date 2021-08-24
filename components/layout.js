@@ -1,15 +1,15 @@
 import Footer from './footer/footer';
 import Navbar from './navbar/navbar';
-import Meta from '../components/meta'
+import Meta from './meta'
 
 export default function Layout({children}) {
 	return (
-	 <>
-      <Meta />
+	<>
+    <Meta />
 			<Navbar />
 			{children}
 			<Footer />
-			 </>
+	</>
 		
 	);
 }
