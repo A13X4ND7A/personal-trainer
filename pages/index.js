@@ -1,7 +1,7 @@
-import Hero from '../components/Hero';
-import Programs from '../components/Programs';
-import Testimonial from '../components/testimonials/testimonial';
-import Maps from '../components/Maps/Maps';
+import Hero from '../components/hero';
+import Programs from '../components/programs';
+
+import Maps from '../components/maps/maps';
 import Head from 'next/head';
 import {getAllPostsForHome} from '../lib/api';
 import MoreStories from '../components/more-stories';
