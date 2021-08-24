@@ -1,5 +1,5 @@
 
-import Programs from '../components/programs';
+
 import Hero from '../components/hero'
 import Maps from '../components/maps/maps';
 import Testimonial from '../components/testimonials/testimonial'
@@ -24,8 +24,7 @@ export default function Index({allPosts, testimonialPosts}) {
 				{/*--Testimonial section--*/}
 				 <Testimonial testimonials={testimonialPosts}/> 
 
-				{/*--section for the programs--*/}
-				<Programs />
+				
 
 				{/*--section for the blog--*/}
 				<section>
