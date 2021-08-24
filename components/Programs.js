@@ -7,7 +7,7 @@ const buttonVariants = {
 
 		boxShadow: '0px 0px 8px rgb(255,255,255)',
 		transition: {
-			repeat: 5,
+			yoyo: 5,
 		},
 	},
 
