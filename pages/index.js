@@ -1,6 +1,6 @@
 
 
-import Hero from '../components/hero'
+
 import Maps from '../components/maps/maps';
 import Testimonial from '../components/testimonials/testimonial'
 import Head from 'next/head';
@@ -18,7 +18,7 @@ export default function Index({allPosts, testimonialPosts}) {
 				</Head>
 				{/*--Hero section--*/}
 				
-				<Hero />
+				
 
 
 				{/*--Testimonial section--*/}
