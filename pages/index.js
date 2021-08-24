@@ -1,11 +1,10 @@
-
-
-
 import Maps from '../components/maps/maps';
 import Testimonial from '../components/testimonials/testimonial'
 import Head from 'next/head';
 import {getAllPostsForHome, getTestimonials} from '../lib/api';
 import MoreStories from '../components/more-stories';
+import Hero from '../components/hero';
+import Programs from '../components/programs';
 
 export default function Index({allPosts, testimonialPosts}) {
 	const morePosts = allPosts.slice(3);
@@ -17,14 +16,14 @@ export default function Index({allPosts, testimonialPosts}) {
 					<title>Personal Trainer Blog Example</title>
 				</Head>
 				{/*--Hero section--*/}
-				
-				
+				<Hero />
 
 
 				{/*--Testimonial section--*/}
 				 <Testimonial testimonials={testimonialPosts}/> 
-
-				
+	
+				{/*--programs section--*/}
+				<Programs />
 
 				{/*--section for the blog--*/}
 				<section>
