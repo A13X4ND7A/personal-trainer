@@ -4,7 +4,7 @@ import Head from 'next/head';
 import {getAllPostsForHome, getTestimonials} from '../lib/api';
 import MoreStories from '../components/more-stories';
 import Hero from '../components/Hero';
-import Programs from '../components/programs';
+import Programs from '../components/Programs';
 
 export default function Index({allPosts, testimonialPosts}) {
 	const morePosts = allPosts.slice(3);
