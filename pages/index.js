@@ -4,10 +4,10 @@ import Hero from '../components/hero'
 import Maps from '../components/maps/maps';
 import Testimonial from '../components/testimonials/testimonial'
 import Head from 'next/head';
-import {getAllPostsForHome} from '../lib/api';
+import {getAllPostsForHome, getTestimonials} from '../lib/api';
 import MoreStories from '../components/more-stories';
 
-export default function Index({allPosts}) {
+export default function Index({allPosts, testimonialPosts}) {
 	const morePosts = allPosts.slice(3);
 	
 	return (
@@ -22,7 +22,7 @@ export default function Index({allPosts}) {
 
 
 				{/*--Testimonial section--*/}
-			 <Testimonial /> 
+				 <Testimonial testimonials={testimonialPosts}/> 
 
 				{/*--section for the programs--*/}
 				<Programs />
@@ -47,9 +47,11 @@ export default function Index({allPosts}) {
 }
 
 export async function getStaticProps({preview = false}) {
+	const testimonialPosts = await getTestimonials();	
 	const allPosts = await getAllPostsForHome(preview);
 	return {
-		props: {allPosts, preview},
+		props: {allPosts, preview, testimonialPosts},
 		revalidate: 1,
 	};
 }
+

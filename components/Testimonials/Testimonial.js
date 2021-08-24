@@ -1,11 +1,9 @@
-import {getTestimonials} from '../../lib/api';
-import PostBody from '../../components/post-body'
+
 import * as FaIcons from 'react-icons/fa';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import {Carousel} from 'react-responsive-carousel';
 
-export default function Testimonial({allPosts}) {
-	console.log('the posts are' + allPosts);
+export default function Testimonial({testimonials}) {
 	
 	return (
 		<>
@@ -17,6 +15,7 @@ export default function Testimonial({allPosts}) {
 					<h2 className='text-gray-300 uppercase text-2xl flex justify-center -ml-6 md:text-4xl lg:text-6xl font-thin'>
 						Testimonials
 					</h2>
+					<ul>
 					{/*Carousel options to get it to automatically move on the page*/}
 					<Carousel
 					showArrows={false}
@@ -26,22 +25,34 @@ export default function Testimonial({allPosts}) {
 						autoPlay={true}
 						showIndicators={false}
 						interval={7000}>
+						{testimonials.map((testimonial) => (
 						
+							<li key={testimonial._id}>
+								<div className='flex flex-row p-12 text-gray-200 lg:max-w-2xl items-center mx-auto font-trade'>
+									<span className='text-2xl block pr-4 text-gray-200'>
+										<FaIcons.FaQuoteLeft />
+									</span>
+									
+									<div className='flex flex-col'>
+										
+										<p className='text-gray-200'> {testimonial.testimonialExcerpt}</p>
+										
+										<span className='flex font-xs font-bold text-gray-200 justify-end font-tradeCondensed tracking-wide'>
+											{testimonial.clientName}
+										</span>
+									</div>
+									<span className='text-2xl text-gray-200 block pl-4'>
+										<FaIcons.FaQuoteRight />
+									</span>
+								</div>
+							</li> 
+					
+				))}
 		
 					</Carousel>
+					</ul>
 				</div>
 			</section>
 		</>
 	);
-}
-export async function getStaticProps() {
-	const allPosts = await getTestimonials();
-	console.log('hello world');
-	return {
-		props: {allPosts},
-		revalidate: 1,
-		
-	};
-	
-	
 }
