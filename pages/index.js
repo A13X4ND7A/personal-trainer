@@ -3,7 +3,7 @@ import Testimonial from '../components/testimonials/testimonial'
 import Head from 'next/head';
 import {getAllPostsForHome, getTestimonials} from '../lib/api';
 import MoreStories from '../components/more-stories';
-import Hero from '../components/hero';
+import Hero from '../components/Hero';
 import Programs from '../components/programs';
 
 export default function Index({allPosts, testimonialPosts}) {
