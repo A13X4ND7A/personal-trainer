@@ -2,6 +2,7 @@
 import Programs from '../components/programs';
 import Hero from '../components/hero'
 import Maps from '../components/maps/maps';
+import Testimonial from '../components/testimonials/testimonial'
 import Head from 'next/head';
 import {getAllPostsForHome} from '../lib/api';
 import MoreStories from '../components/more-stories';
@@ -21,7 +22,7 @@ export default function Index({allPosts}) {
 
 
 				{/*--Testimonial section--*/}
-				{/* <Testimonial /> */}
+			 <Testimonial /> 
 
 				{/*--section for the programs--*/}
 				<Programs />

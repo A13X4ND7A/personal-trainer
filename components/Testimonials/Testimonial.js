@@ -1,9 +1,12 @@
-import * as FaIcons from 'react-icons/fa';
 import {getTestimonials} from '../../lib/api';
+import PostBody from '../../components/post-body'
+import * as FaIcons from 'react-icons/fa';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import {Carousel} from 'react-responsive-carousel';
 
-export default function Testimonial({_id, clientName, testimonialExcerpt}) {
+export default function Testimonial({allPosts}) {
+	console.log('the posts are' + allPosts);
+	
 	return (
 		<>
 			<section className='flex flex-col bg-testimonial-image bg-cover bg-no-repeat bg-right-top h-testimonial'>
@@ -15,16 +18,30 @@ export default function Testimonial({_id, clientName, testimonialExcerpt}) {
 						Testimonials
 					</h2>
 					{/*Carousel options to get it to automatically move on the page*/}
+					<Carousel
+					showArrows={false}
+						infiniteLoop={true}
+						showThumbs={false}
+						showStatus={false}
+						autoPlay={true}
+						showIndicators={false}
+						interval={7000}>
+						
+		
+					</Carousel>
 				</div>
 			</section>
 		</>
 	);
 }
-
-export async function getStaticProps({preview = false}) {
-	const testimonials = await getTestimonials(preview);
+export async function getStaticProps() {
+	const allPosts = await getTestimonials();
+	console.log('hello world');
 	return {
-		props: {testimonials, preview},
+		props: {allPosts},
 		revalidate: 1,
+		
 	};
+	
+	
 }
