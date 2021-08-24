@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion';
 import Maps from '../components/Maps/Maps';
-import SocialMedia from '../components/Footer/SocialMedia';
+import SocialMedia from '../components/footer/socialMedia';
 
 const buttonVariants = {
 	hover: {

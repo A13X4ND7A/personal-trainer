@@ -1,6 +1,6 @@
 import Hero from '../components/Hero';
 import Programs from '../components/Programs';
-import Testimonial from '../components/Testimonials/Testimonial';
+import Testimonial from '../components/testimonials/testimonial';
 import Maps from '../components/Maps/Maps';
 import Head from 'next/head';
 import {getAllPostsForHome} from '../lib/api';
