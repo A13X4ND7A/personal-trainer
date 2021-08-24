@@ -1,5 +1,5 @@
 import Footer from './footer/footer';
-import Navbar from './Navbar/Navbar';
+import Navbar from './navbar/navbar';
 import Meta from '../components/meta'
 
 export default function Layout({children}) {

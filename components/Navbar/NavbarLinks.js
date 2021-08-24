@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {MenuData} from './MenuData';
+import {MenuData} from './menudata';
 import {motion} from 'framer-motion';
 
 const navVariants = {

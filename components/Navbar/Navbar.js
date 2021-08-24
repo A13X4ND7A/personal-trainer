@@ -1,8 +1,8 @@
 import {useState} from 'react';
-import NavbarLinks from './NavbarLinks';
+import NavbarLinks from './navbarlinks';
 import {IconContext} from 'react-icons';
 import * as AiIcons from 'react-icons/ai';
-import Logo from './Logo';
+import Logo from './logo';
 
 const Navbar = () => {
 	//state for the hamburger menu
